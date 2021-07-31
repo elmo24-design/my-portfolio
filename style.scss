@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400&display=swap');
+
+@import 'showcase';
+@import 'projects';
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   font-family: 'Poppins', sans-serif;
+}
+.logo{
+   width: 3rem;
+}
+.container{
+   max-width: 75%;
+   margin: 0 auto;
+}
+#moon{
+   font-size: 1.3rem;
+   cursor: pointer;
+}
+.bubble {
+   position: absolute;
+   z-index: -2;
+   background-color: white;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   transition: 0.5s ease;
+   border-radius: 30px;
+   transform: scale(1.5);
+}
+.projects{
+   height: 100vh;
+}
+.black {
+   background-color: white;
+   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+   a{
+      color: black;
+   }
+}
+header{
+   width: 100%;
+   position: fixed;
+   z-index: 999;
+   transition: 0.3s ease;
+   nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: auto;
+      padding: 1.5rem 0;
+      width: 75%;
+      .left-nav{
+         display: flex;
+         align-items: center;
+         p{
+            padding-left: 10px;
+         }
+      }
+      ul{
+         list-style: none;
+         display: flex;
+         align-items: center;
+         li{
+            padding-left: 2rem;
+         }
+         a{
+            text-decoration: none;
+            color: black;
+            font-size: 0.9rem;
+         }
+         .last{
+            padding-right: 2rem;
+         }
+         .first{
+            padding-left: 0;
+         }
+      }
+   }
+}

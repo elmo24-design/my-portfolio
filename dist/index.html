@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../dist/css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+   <link rel="icon" href="../dist/images/mylogo_black.png">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <script
+     src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
+     defer
+   ></script>
+   <title>Elmo Mahupil</title>
+</head>
+<body>
+   <!-- Home Section -->
+   <section class="home" data-index="0" id="home">
+      <header class="navbar">
+         <nav>
+            <div class="left-nav">
+               <img src="../dist/images/mylogo_black.png" alt="logo" class="logo">
+               <p>Elmo Mahupil</p>
+            </div>
+            <ul class="cf">
+               <li><a data-page="home" class="first" href="#home">Home</a></li>
+               <li><a data-page="projects" href="#projects">My Projects</a></li>
+               <li><a data-page="about me" href="#about">About Me</a></li>
+               <li><a data-page="skills" href="#skills">Skills</a></li>
+               <li class="last"><a data-page="contact" href="#contacts">Contact</a></li>
+               <div class="bubble"></div>
+               <i class="far fa-moon" id="moon"></i>   
+            </ul>
+         </nav>
+      </header>
+      <div class="showcase container">
+         <div class="icons">
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github"></i>
+         </div>
+         <div class="highlight">
+            <div class="showcase-left">
+               <h1>Hi, I'm Elmo</h1>
+               <p>I’m a Web developer from Philippines specializing in Front End Development. I help people solve their problems by building Web Applications.</p>
+               <div class="showcase-buttons">
+                  <a class="showcase-button project-btn" data-page="projects" href="#projects">My Projects</a>
+                  <a class="showcase-button about-btn" data-page="about" href="#about">About Me</a>
+               </div>
+            </div>
+            <div class="showcase-right">
+               <img src="../dist/images/vexel.png" alt="vexel">
+            </div>      
+         </div>
+      </div>
+      <div class="container mouse-container">
+         <img src="../dist/images/mouse-2.png" alt="mouse" class="mouse">
+      </div>
+      <svg 
+         class="backdrop-right-home"
+         width="456" height="691" viewBox="0 0 456 691" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path d="M183.5 407C-151.7 352.6 48.8333 112.667 191 -0.5L565 -60L669.5 156.5L518.5 659C741.5 617.167 1056.4 558.6 532 659C7.59998 759.4 101.833 597.833 214.5 504.5C278.5 434.1 220.5 410.167 183.5 407Z" fill="#EBE8FF"/>
+      </svg>
+      <svg
+      class="backdrop-left-home" 
+      width="257" height="437" viewBox="0 0 257 437" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path d="M166.196 58.2416C27.2971 59.9999 -58.1304 20.1465 -83.4818 0L-109 147.252V425.274C-16.9344 468.79 95.1454 380.768 139.677 331.318C338.619 109.34 240.249 56.7764 166.196 58.2416Z" fill="#EBE8FF"/>
+      </svg>
+   </section>
+   <!-- End of Home Section -->
+
+   <!-- My projects Section -->
+   <section class="projects" data-index="1" id="projects">
+      <div class="heading-projects container">
+         <div class="bubble-project"></div>
+         <h1>My Projects</h1>
+         <p>Take a look at some of my Projects</p>
+      </div>
+
+      <div class="projects-grid container">
+         <div class="left-grid" data-aos="fade-right" data-aos-duration="700">
+            <div class="grid-top">
+               <div class="circleNum">
+                  <i>01</i>
+               </div>
+               <div class="right">
+                  <h1>Snapgram</h1>
+                  <small>Personal Project</small>
+               </div>
+            </div>
+            <p>
+               Snapgram, basically a mini-instagram clone but  it is an application that I’ve created where users can store and keep  track of their memories. 
+            </p>
+            <div class="actions">
+               <a href="https://snapgram-app.netlify.app/" target="_blank" class="live-demo-btn">
+                  <p>Live Demo</p>
+                  <i class="fas fa-chevron-right"></i>
+               </a>
+               <a href="https://github.com/elmo24-design/snapgram" target="_blank" class="repo-btn">
+                  <i class="fab fa-github"></i>
+                  <p>Repository</p>
+               </a>
+               <a class="read-more">
+                  <p>Read More</p>
+                  <i class="fas fa-chevron-right"></i>
+               </a>
+            </div>
+         </div>
+         <div class="right-grid" data-aos="fade-left" data-aos-duration="700">
+            <img src="../dist/images/thumbnails/snapgram.png" alt="snapgram" class="snapgram-img">
+         </div>
+      </div>
+
+      <div class="projects-grid container">
+         <div class="right-grid-pwcc" data-aos="fade-right" data-aos-duration="700">
+            <img src="../dist/images/thumbnails/pwcc.png" alt="snapgram" class="snapgram-img">
+         </div>
+         <div class="left-grid" data-aos="fade-left" data-aos-duration="700">
+            <div class="grid-top">
+               <div class="circleNum circle2">
+                  <i>02</i>
+               </div>
+               <div class="right">
+                  <h1>PWCC Application</h1>
+                  <small>Client Project</small>
+               </div>
+            </div>
+            <p>
+               PWCC Application is a Profiling and Sales Management App that I’ve created for the PWCC department in the Municipality of Pililla, Rizal to help them manage their transactions.
+            </p>
+            <div class="actions">
+               <a href="https://pwcc-application.netlify.app/" target="_blank" class="live-demo-btn">
+                  <p>Live Demo</p>
+                  <i class="fas fa-chevron-right"></i>
+               </a>
+               <a href="https://github.com/elmo24-design/pwcc-profiling" target="_blank" class="repo-btn">
+                  <i class="fab fa-github"></i>
+                  <p>Repository</p>
+               </a>
+               <a class="read-more">
+                  <p>Read More</p>
+                  <i class="fas fa-chevron-right"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+
+      <div class="projects-grid container">
+         <div class="left-grid" data-aos="fade-right" data-aos-duration="700">
+            <div class="grid-top">
+               <div class="circleNum circle2">
+                  <i>03</i>
+               </div>
+               <div class="right">
+                  <h1>CMS App</h1>
+                  <small>Client Project</small>
+               </div>
+            </div>
+            <p>
+               CMS App, A Client Management System that I’ve built for Mosfetech digital electronics services to help them manage their clients.
+            </p>
+            <div class="actions">
+               <a href="https://cms-app-mosfetech.netlify.app/" target="_blank" class="live-demo-btn">
+                  <p>Live Demo</p>
+                  <i class="fas fa-chevron-right"></i>
+               </a>
+               <a href="https://github.com/elmo24-design/CMS-APP" target="_blank" class="repo-btn">
+                  <i class="fab fa-github"></i>
+                  <p>Repository</p>
+               </a>
+               <a class="read-more">
+                  <p>Read More</p>
+                  <i class="fas fa-chevron-right"></i>
+               </a>
+            </div>
+         </div>
+         <div class="right-grid" data-aos="fade-left" data-aos-duration="700">
+            <img src="../dist/images/thumbnails/cms app.png" alt="snapgram" class="snapgram-img">
+         </div>
+      </div>
+
+      <div class="projects-grid container">
+         <div class="right-grid-pwcc" data-aos="fade-right" data-aos-duration="700">
+            <img src="../dist/images/thumbnails/devs forum.png" alt="snapgram" class="snapgram-img">
+         </div>
+         <div class="left-grid" data-aos="fade-left" data-aos-duration="700">
+            <div class="grid-top">
+               <div class="circleNum circle2">
+                  <i>04</i>
+               </div>
+               <div class="right">
+                  <h1>Devs Forum</h1>
+                  <small>Personal Project</small>
+               </div>
+            </div>
+            <p>
+               Devs Forum is like a mini-SNS application that I’ve created for me and my friends where we could post and share projects that we’ve created ourselves.
+            </p>
+            <div class="actions">
+               <a href="https://devs-forum-elmomahupil.netlify.app/" target="_blank" class="live-demo-btn">
+                  <p>Live Demo</p>
+                  <i class="fas fa-chevron-right"></i>
+               </a>
+               <a href="https://github.com/elmo24-design/Devs-forum" target="_blank" class="repo-btn">
+                  <i class="fab fa-github"></i>
+                  <p>Repository</p>
+               </a>
+               <a class="read-more">
+                  <p>Read More</p>
+                  <i class="fas fa-chevron-right"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+
+      <!-- Backdrops -->
+      <svg
+         class="bg-project-1" 
+         width="489" height="630" viewBox="0 0 489 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path d="M130.996 83.9639C331.375 86.4986 454.614 29.0441 491.187 0L528 212.286V613.095C395.184 675.83 233.495 548.934 169.253 477.644C-117.745 157.63 24.1657 81.8516 130.996 83.9639Z" fill="#EBE8FF"/>
+      </svg>
+      <svg 
+         class="bg-project-2" 
+         width="434" height="855" viewBox="0 0 434 855" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path d="M415.291 208.152C451.261 295.829 432.021 420.131 386.013 536.665C340.006 653.198 268.066 759.743 121.678 817.455C-24.7104 874.057 -245.548 880.716 -342.582 726.448C-438.78 571.07 -410.339 254.765 -299.92 109.376C-189.502 -34.9038 3.7307 -7.15779 145.1 31.6867C287.306 70.5311 379.321 120.474 415.291 208.152Z" fill="#EBE8FF"/>
+      </svg>
+         
+   </section>
+   <!-- End of my projects Section -->
+
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+   crossorigin="anonymous"></script>
+   <script src="js/navbar.js"></script>
+   <script src="js/main.js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+      AOS.init({});
+   </script>
+</body>
+</html>
