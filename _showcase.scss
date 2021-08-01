@@ -1,12 +1,12 @@
 .home{
-   height: 100vh;   
+   height: 100vh;  
 }
 .showcase{
    display: flex; 
    align-items: center;
    padding-top: 5rem;
    img{
-      width: 27rem;
+      width: 30rem;
    }
    .icons{
       display: flex;
@@ -15,6 +15,9 @@
       i{
          padding-top: 1.5rem;
          cursor: pointer;
+      }
+      a{
+         color: black;
       }
    }
    .highlight{
@@ -26,8 +29,15 @@
       .showcase-left{
          width: 27rem;
          margin-left: 3rem;
+         margin-top: -1rem;
          h1{
             font-size: 4.5rem;
+            margin-left: -0.2rem;
+         }
+         .frontend{
+            font-size: 1.4rem;
+            margin-top: -0.8rem;
+            margin-bottom: 1rem;
          }
          .showcase-buttons{
             margin-top: 2rem;
@@ -56,6 +66,10 @@
       }
    }
 }
+.mouse-container{
+   max-width: 75%;
+   margin: 0 auto;
+}
 .mouse{
    width: 1.7rem;
    animation: move 1s infinite alternate;
@@ -71,6 +85,22 @@
    bottom: 0;
    left: 0;
    z-index: -1;
+   width: 12rem;
+   margin-bottom: -6rem;
+}
+.dev-bg{
+   position: absolute;
+   top: 0;
+   left: 0;
+   margin-top: -2rem;
+   z-index: -5;
+}
+.graphics-bg{
+   position: absolute;
+   top: 7rem;
+   left: 18rem;
+   opacity: 0.5;
+   z-index: -5
 }
 @keyframes move {
    from{

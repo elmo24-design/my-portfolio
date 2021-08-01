@@ -8,6 +8,62 @@
    padding: 0;
    box-sizing: border-box;
 }
+.backdrop{
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.7);
+   z-index: 60;
+   position: fixed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.modal{
+   background-color: white;
+   width: 40rem;
+   height: 37rem;
+   z-index: 70;
+   border-radius: 10px;
+   overflow-y: scroll;
+   padding: 0.5rem 1rem;
+   .modal-heading{
+      p{
+         color: #6C55E1;
+      }
+   }
+   .modal-desc{
+      padding-top: 1rem;
+   }
+   .modal-tech{
+      padding-top: 1rem;
+      img{
+         width: 3rem;
+      }
+      .tech-icons{
+         display: flex;
+         align-items: center;
+         padding-top: 1rem;
+      }
+      .tech-group{
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         padding-left: 30px;
+      }
+      .tech-group-1{
+         padding-left: 0;
+      }
+   }
+   .features{
+      padding-top: 1rem;
+      h3{
+         padding-bottom: 0.5rem;
+      }
+      ul{
+         padding-left: 1.3rem;
+      }
+   }
+}
 body{
    font-family: 'Poppins', sans-serif;
 }
@@ -44,7 +100,7 @@ body{
 header{
    width: 100%;
    position: fixed;
-   z-index: 999;
+   z-index: 50;
    transition: 0.3s ease;
    nav{
       display: flex;
