@@ -11,20 +11,26 @@ function navcheck(entries) {
    entries.forEach((entry) => {
      const className = entry.target.className;
      const activeAnchor = document.querySelector(`[data-page=${className}]`);
-     //to match the height,width,position of the anchor tag
-     const coords = activeAnchor.getBoundingClientRect();
-     const directions = {
-       height: coords.height,
-       width: coords.width,
-       top: coords.top,
-       left: coords.left,
-     };
-     if (entry.isIntersecting) {
-       bubble.style.setProperty("left", `${directions.left}px`);
-       bubble.style.setProperty("top", `${directions.top}px`);
-       bubble.style.setProperty("width", `${directions.width}px`);
-       bubble.style.setProperty("height", `${directions.height}px`);
+
+     if(entry.isIntersecting){
+        activeAnchor.classList.add('active-link')
+     }else{
+        activeAnchor.classList.remove('active-link')
      }
+   //to match the height,width,position of the anchor tag
+   //   const coords = activeAnchor.getBoundingClientRect();
+   //   const directions = {
+   //     height: coords.height,
+   //     width: coords.width,
+   //     top: coords.top,
+   //     left: coords.left,
+   //   };
+   //   if (entry.isIntersecting) {
+   //     bubble.style.setProperty("left", `${directions.left}px`);
+   //     bubble.style.setProperty("top", `${directions.top}px`);
+   //     bubble.style.setProperty("width", `${directions.width}px`);
+   //     bubble.style.setProperty("height", `${directions.height}px`);
+   //   }
    });
 }
 

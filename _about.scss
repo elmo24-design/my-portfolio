@@ -1,0 +1,136 @@
+.about{
+   padding-top: 6rem;
+   padding-bottom: 5rem;
+   background-color:#6C55E1;
+   color: white;
+   margin-top: 3rem;
+}
+.bubble-about{
+   background-color: white;;
+   width: 6rem;
+   height: 0.5rem;
+   border-radius: 30px;
+}
+.heading-about{
+   h1{
+      margin-top: 1rem;
+      font-size: 2rem;
+   }
+}
+.about-grid{
+   margin-top: 3rem;
+   display: flex;
+   align-items: center;
+   .left-about-grid{
+      padding-right: 5rem;
+      position: relative;
+   }
+   .right-about-grid{
+      p{
+         padding-top: 1rem;
+      }
+      .p-2{
+         padding-bottom: 1rem;
+      }
+      .about-icons{
+         display: flex;
+         padding-top: 1rem;
+         i{
+            font-size: 1.5rem;
+         }
+         a{
+            color: white;
+            padding-left: 15px;
+         }
+         .first-about-icon{
+            padding-left: 0;
+         }
+      }
+   }
+}
+.arrow{
+   position: absolute;
+   z-index: 2;
+   right: 0;
+   margin-right: -6rem;
+   width: 14rem;
+   margin-top: -1rem;
+}
+.testimonials{
+   margin-top: 4rem;
+   .heading-about{
+      width: 20rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+      .bubble-about{
+         display: flex;
+      }
+   }
+}
+.slideshow-container {
+   width:50%;
+   position: relative;
+   margin: 0 auto;
+   width: 35rem;
+   a{
+      position: absolute;
+      top: 50%;
+      cursor: pointer;
+      &:hover{
+         color: #3D3080;
+      }
+      i{
+         font-size: 2rem;
+      }
+   }
+   .prev{
+      left:0;
+      margin-left: -5rem;
+   }
+   .next{
+      right: 0;
+      margin-right: -5rem;
+   }
+   .mySlides{
+      display: none;
+   }
+   .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+   } 
+   @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+   }
+   @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+   }
+   img{
+      vertical-align: middle;
+   }
+}
+.dots{
+   text-align: center;
+   z-index: 5;
+   margin-top: 1.5rem;
+}
+.dot{
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: white;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+   background-color: #3D3080;
+}

@@ -1,6 +1,6 @@
-.home{
-   height: 100vh;  
-}
+// .home{
+//    height: 100vh;
+// }
 .showcase{
    display: flex; 
    align-items: center;
@@ -27,7 +27,7 @@
       width: 100%;
       height: 100%;
       .showcase-left{
-         width: 27rem;
+         width: 29rem;
          margin-left: 3rem;
          margin-top: -1rem;
          h1{
@@ -43,8 +43,8 @@
             margin-top: 2rem;
             a{
                text-decoration: none;
-               padding: 0.5rem 1rem;
-               border-radius: 3px;
+               padding: 0.5rem 1.3rem;
+               border-radius: 30px;
                &:hover{
                   opacity: 0.9;
                }
@@ -85,8 +85,7 @@
    bottom: 0;
    left: 0;
    z-index: -1;
-   width: 12rem;
-   margin-bottom: -6rem;
+   margin-bottom: -4rem;
 }
 .dev-bg{
    position: absolute;
