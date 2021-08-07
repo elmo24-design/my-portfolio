@@ -1,0 +1,84 @@
+.contact{
+   padding-top: 5rem;
+   padding-bottom: 6rem;
+}
+.heading-contact{
+   h1{
+      margin-top: 1rem;
+      font-size: 2rem;
+   }
+   .bubble-contact{
+      background-color:#6C55E1;
+      width: 6rem;
+      height: 0.5rem;
+      border-radius: 30px;
+   }
+}
+.contact-grid{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 2rem;
+   .right{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 40%;
+      form{
+         width: 100%;
+         .form-group{
+            margin-top: 15px;
+            input,textarea{
+               margin-top: 5px;
+               width : 100%;
+               padding: 0.7rem;
+               background-color: #F2F2F2;
+               border: none;
+               border-radius: 3px;
+            }
+            textarea{
+               height: 7rem;
+               max-height: 7rem;
+               max-width: 100%;
+               min-width: 100%;
+            }
+         }
+         button{
+            width: 100%;
+            border: none;
+            background-color: #6C55E1;
+            border-radius: 3px;
+            color: white;
+            padding: 0.7rem;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.5rem;
+            p{
+               font-size: 1rem;
+               padding-right: 10px;
+            }
+            &:hover{
+               background-color: #5741c5;
+            }
+         }
+      }
+      .email{
+         display: flex;
+         align-items: center;
+         margin-top: 2rem;
+         p{
+            margin-right: 0.5rem;
+         }
+         .gmail{
+            display: flex;
+            align-items: center;
+         }
+      }
+   }
+}
+.gmail-logo{
+   width: 2rem;
+}

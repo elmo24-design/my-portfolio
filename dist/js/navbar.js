@@ -1,5 +1,6 @@
-const sections = document.querySelectorAll("section");
+const contact = document.querySelector(".contact");
 const bubble = document.querySelector(".bubble");
+const upBtn = document.querySelector('.up')
 
 const options = {
    threshold: 0.7,
@@ -7,33 +8,15 @@ const options = {
 
 let observer = new IntersectionObserver(navcheck, options);
 
-function navcheck(entries) {
-   entries.forEach((entry) => {
-     const className = entry.target.className;
-     const activeAnchor = document.querySelector(`[data-page=${className}]`);
-
-     if(entry.isIntersecting){
-        activeAnchor.classList.add('active-link')
-     }else{
-        activeAnchor.classList.remove('active-link')
-     }
-   //to match the height,width,position of the anchor tag
-   //   const coords = activeAnchor.getBoundingClientRect();
-   //   const directions = {
-   //     height: coords.height,
-   //     width: coords.width,
-   //     top: coords.top,
-   //     left: coords.left,
-   //   };
-   //   if (entry.isIntersecting) {
-   //     bubble.style.setProperty("left", `${directions.left}px`);
-   //     bubble.style.setProperty("top", `${directions.top}px`);
-   //     bubble.style.setProperty("width", `${directions.width}px`);
-   //     bubble.style.setProperty("height", `${directions.height}px`);
-   //   }
-   });
+function navcheck(entry) {
+   if(entry.isIntersecting){
+      upBtn.style.display = "block"
+   }else{
+      upBtn.style.display = "none"
+   }
 }
 
-sections.forEach((section) => {
-   observer.observe(section);
-});
+// sections.forEach((section) => {
+//    observer.observe(section);
+// });
+observer.observe(contact)

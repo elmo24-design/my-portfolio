@@ -4,7 +4,6 @@ const backdropPWCC = document.querySelector('.backdrop-pwcc')
 const backdropCMS = document.querySelector('.backdrop-cmsapp')
 const backdropDevs = document.querySelector('.backdrop-devsForum')
 
-
 //buttons
 const snapgramBtn = document.querySelector('.snapgram-btn')
 const pwccBtn = document.querySelector('.pwcc-btn')
@@ -13,10 +12,6 @@ const devsForumBtn = document.querySelector('.devsForumBtn')
 
 window.onload  = () => {
    showSlides(slideIndex)
-   backdropSnapgram.style.display="none"
-   backdropPWCC.style.display="none"
-   backdropCMS.style.display="none"
-   backdropDevs.style.display="none"
 }
 
 //Close Modals

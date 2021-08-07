@@ -3,6 +3,8 @@
 @import 'showcase';
 @import 'projects';
 @import 'about';
+@import 'skills';
+@import 'contact';
 
 *{
    margin: 0;
@@ -22,6 +24,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   display: none;
 }
 .modal{
    background-color: white;
@@ -180,3 +183,33 @@ header{
       color: black;
    }
 }
+.footer{
+   background-color: #6C55E1;
+   color: white;
+   height: 25vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+// .up{
+//    background-color: white;
+//    width: 3rem;
+//    text-align: center;
+//    padding: 0.7rem;
+//    border-radius: 50%;
+//    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+//    position: fixed;
+//    margin-left:95%;
+//    margin-top: -2rem;
+//    cursor: pointer;
+//    z-index: 5;
+//    transition: 0.3s ease-in-out;
+//    display: none;
+//    &:hover{
+//       opacity: 0.9;
+//    }
+//    i{
+//       font-size: 1rem;
+//       color:#6C55E1;
+//    }
+// }

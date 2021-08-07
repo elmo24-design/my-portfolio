@@ -21,10 +21,12 @@
 .projects-grid{
    display: flex;
    align-items: center;
+   justify-content: space-between;
    padding: 1rem 0;
    padding-top: 3rem;
    .left-grid{
-      padding-right: 3rem;
+      width: 29rem;
+      margin-top: -1rem;
       .grid-top{
          display: flex;
          align-items: center;
@@ -33,6 +35,9 @@
             small{
                font-weight: bold;
                color:#6C55E1;
+            }
+            h1{
+               padding-top: 3px;
             }
          }
       }
