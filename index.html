@@ -269,10 +269,13 @@
       </div>
    </div>
    
+   <div class="front">
+      <img src="/dist/images/mylogo_black.png" alt="logo">
+   </div>
    <!-- Home Section -->
    <section class="home" data-index="0" id="home">
       <header class="navbar">
-         <nav>
+         <nav class="container">
             <div class="left-nav">
                <img src="/dist/images/mylogo_black.png" alt="logo" class="logo">
                <p>Elmo Mahupil</p>
@@ -288,7 +291,7 @@
          </nav>
       </header>
       <div class="showcase container">
-         <div class="icons">
+         <div class="icons highlight-icons">
             <a href="https://www.linkedin.com/in/elmo-mahupil-87997a206/" target="_blank">
                <i class="fab fa-linkedin-in"></i>
             </a>
@@ -301,12 +304,10 @@
             <a href="https://www.youtube.com/channel/UCGslNJY-qDXrm_lB2l7lKRA" target="_blank">
                <i class="fab fa-youtube"></i>
             </a>
-
-           
          </div>
          <div class="highlight">
             <div class="showcase-left">
-               <h1>Hi, I'm Elmo</h1>
+               <h1 class="hi">Hi, I'm Elmo</h1>
                <p class="frontend">Aspiring Fullstack Developer</p>
                <p class="desc">I'm an aspiring fullstack developer from Pililla, Rizal, Philippines. I help people solve their problems by building Web Applications.</p>
                <div class="cf showcase-buttons">
@@ -315,7 +316,7 @@
                </div>
             </div>
             <div class="showcase-right">
-               <img src="/dist/images/vexel-final.png" alt="vexel">
+               <img src="/dist/images/vexel-final.png" alt="vexel" class="vexel">
             </div>      
          </div>
       </div>
@@ -766,6 +767,7 @@
                   <img src="/dist/images/tech-icons/sass.png" alt="sass">
                   <img src="/dist/images/tech-icons/Bootstrap_logo.svg.png" alt="bootstrap">
                   <img src="/dist/images/tech-icons/materialize-css.png" alt="materialize">
+                  <img src="/dist/images/tech-icons/nextjs.png" alt="nextjs">
                </div>
             </div>
             <div class="card">
@@ -847,8 +849,13 @@
 
    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
    crossorigin="anonymous"></script>
+   <!-- Animation lib -->
+   <script src="dist/js/motion/three.min.js"></script>
+   <script src="dist/js/motion/TweenMax.min.js"></script>
+   <script src="dist/js/motion/hover.js"></script>
+   <script src="dist/js/motion/gsap.js"></script>
    <!-- <script src="/dist/js/navbar.js"></script> -->
-   <script src="/dist/js/main.js"></script>
+   <script src="/dist/js/smoothScroll.js"></script>
    <script src="/dist/js/master.js"></script>
    <script src="/dist/js/imageModal.js"></script>
 
