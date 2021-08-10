@@ -121,10 +121,14 @@ body{
 .logo{
    width: 3rem;
 }
-
-#moon{
+#moon, #sun{
    font-size: 1.3rem;
    cursor: pointer;
+}
+#sun{
+   display: none;
+   color:#6C55E1;
+   font-size: 1.6rem;
 }
 header{
    width: 100%;
@@ -152,6 +156,7 @@ header{
          li{
             margin-left: 2rem;
             position: relative;
+            padding-bottom: 3px;
             ::after{
                content: "";
                position: absolute;
@@ -173,6 +178,10 @@ header{
             text-decoration: none;
             color: black;
             font-size: 0.9rem;
+            padding-bottom: 3px;
+            &.active-link{
+               border-bottom: 2px solid #6C55E1;
+            }
          }
          .last{
             margin-right: 2rem;
@@ -180,13 +189,7 @@ header{
       }
    }
 }
-.active-link{
-   background-color: white;
-   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-   transition: 0.5s ease;
-   border-radius: 30px;
-   padding: 0.5rem 1rem;
-}
+
 .black {
    background-color: white;
    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -205,25 +208,140 @@ header{
    align-items: center;
    justify-content: center;
 }
-// .up{
-//    background-color: white;
-//    width: 3rem;
-//    text-align: center;
-//    padding: 0.7rem;
-//    border-radius: 50%;
-//    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-//    position: fixed;
-//    margin-left:95%;
-//    margin-top: -2rem;
-//    cursor: pointer;
-//    z-index: 5;
-//    transition: 0.3s ease-in-out;
-//    display: none;
-//    &:hover{
-//       opacity: 0.9;
-//    }
-//    i{
-//       font-size: 1rem;
-//       color:#6C55E1;
-//    }
-// }
+.darkmode{
+   //Modals
+   .modal{
+      background-color: #212121;
+      color: whitesmoke;
+   }
+   .modal-heading{
+      p{
+         color: #9A9A9A;
+      }
+   }
+   //Home
+   .home{
+      background-color: #212121 ;
+      color: whitesmoke;
+   }
+   .showcase{
+      .icons{
+         a{
+            color: whitesmoke;
+         }
+      }
+   }
+   header{
+      nav{
+         ul{
+            li{
+               a{
+                  color: whitesmoke;
+               }
+            }
+         }
+      }
+   }
+   .mouse-black{
+      display: none;
+   }
+   .mouse-white{
+      display: block;
+   }
+   .graphics-bg{
+      .moon-path{
+         fill: #1C1C1C;
+      }
+      rect, path, circle, line{
+         stroke: #1C1C1C;
+      }
+   }
+   .backdrop-left-home, .backdrop-right-home{
+      path{
+         fill: #1C1C1C;
+      }
+   }
+   #moon{
+      display: none;
+   }
+   #sun{
+      display: block;
+   }
+   .black {
+     background-color: #2E2E2E;
+      a{
+         color: whitesmoke;
+      }
+   }
+
+   //Projects
+   .projects{
+      background-color: #252525;
+      color: whitesmoke;
+      .grid-top{
+         .right{
+            small{
+               font-weight: bold;
+               color:#9A9A9A;
+            }
+            h1{
+               padding-top: 3px;
+            }
+         }
+      }
+      .right-grid{
+         .circle-thumb{
+            background-color: #252525;
+         }
+      }
+      .grid-3{
+         .card{
+            background-color: #2E2E2E;
+         }
+         .desc{
+            p{
+               color: #9A9A9A;
+            }
+         }
+         .icons-thumb{
+            .circle-thumb{
+               background-color: #2E2E2E;
+            }
+         }
+         .actions{
+            a{
+               color: whitesmoke;
+            }
+         }
+      }
+   }
+
+   //Skills
+   .skills{
+      background-color: #252525;
+      z-index: 1;
+      .heading-skills{
+         color: whitesmoke;
+      }
+      .skills-grid{
+         .card{
+            z-index: 1;
+         }
+      }
+   }
+
+   //Contact
+   .contact{
+      background-color: #212121;
+      color: whitesmoke;
+      form{
+         .form-group{
+            input,textarea{
+               background-color: #2E2E2E;
+               outline: none;
+               color: whitesmoke;
+            }
+         }
+      }
+   }
+}
