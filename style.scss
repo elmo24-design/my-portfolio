@@ -171,7 +171,7 @@ header{
          transition: 0.3s ease-in-out;
          position: absolute;
          right: 0;
-         display: none;
+         top: 30%;
          &:hover{
             opacity: 0.9;
          }
@@ -573,6 +573,7 @@ header{
       transition: all 1s ease-out;
       li{
          margin-top: 3rem;
+         margin-left:0;
          opacity: 0;
          ::after{
             background-color: white;
@@ -609,7 +610,7 @@ header{
    #sun, #moon{
       color: white;
       font-size: 2rem;
-      margin-left: 2rem;
+      margin-left: 0;
       margin-top: 3rem;
       transition: all 0.5s ease 0.7s;
    }
@@ -969,6 +970,31 @@ header{
          width: 22rem !important;
          img{
            width: 22rem !important;
+         }
+      }
+   }
+}
+
+@media(max-width: 380px){
+   //projects
+   .projects{
+      .projects-grid{
+         .right-grid{
+            .img-wrapper{
+               width: 20.5rem;
+            }
+         }
+         .left-grid{
+            width: 95%;
+         }
+      }
+   }
+   //About
+   .testimonials{
+      .slideshow-container{
+         width: 21rem !important;
+         img{
+           width: 21rem !important;
          }
       }
    }
