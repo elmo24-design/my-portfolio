@@ -548,9 +548,12 @@ header{
    }
    .menu{
       display: block !important;
-   }
-   .ham{
-      display: block !important;
+      .ham{
+         display: block !important;
+      }
+      #closeMenu{
+         display: none;
+      }
    }
    .nav-links.open{
       clip-path: circle(1500px at 100% -10%);
